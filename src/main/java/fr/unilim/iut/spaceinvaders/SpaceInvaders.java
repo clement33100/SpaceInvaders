@@ -1,6 +1,7 @@
 package fr.unilim.iut.spaceinvaders;
 
 public class SpaceInvaders {
+	private static final int minimum_longueur = 0;
 	private static final char MARQUE_FIN_LIGNE = '\n';
 	private static final char MARQUE_VIDE = '.';
 	private static final char MARQUE_VAISSEAU = 'V';
@@ -69,6 +70,14 @@ public class SpaceInvaders {
 	}
 	
 	public void deplacerVaisseauVersLaGauche() {
-		if (vaisseau.abscisse()> 0) vaisseau.seDeplacerVersLaGauche();
+		if (vaisseau.abscisse()> minimum_longueur) vaisseau.seDeplacerVersLaGauche();
 	    }
+	
+	public void positionnerUnNouveauVaisseau(int longueur, int hauteur, int x, int y) {
+		if (!estDansEspaceJeu(x, y))
+			throw new HorsEspaceJeuException("La position du vaisseau est en dehors de l'espace jeu");
+
+		vaisseau = new Vaisseau(longueur, hauteur);
+		vaisseau.positionner(x, y);
+	}
 }
