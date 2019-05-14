@@ -14,11 +14,14 @@ public class Vaisseau {
 	   this(new Dimension(longueur, hauteur), new Position(x, y));
     }
 
-    public Vaisseau(Dimension dimension, Position positionOrigine) {
+    public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
 	    this.dimension = dimension;
 	    this.origine = positionOrigine;
 	    this.vitesse=1;
     }
+    public Vaisseau(Dimension dimension, Position positionOrigine) {
+		this(dimension, positionOrigine, 1);
+	}
 
     public boolean occupeLaPosition(int x, int y) {
 	    return estAbscisseCouverte(x) && estOrdonneeCouverte(y);
