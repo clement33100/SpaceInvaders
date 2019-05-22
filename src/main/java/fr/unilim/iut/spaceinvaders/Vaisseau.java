@@ -17,7 +17,7 @@ public class Vaisseau {
     public Vaisseau(Dimension dimension, Position positionOrigine, int vitesse) {
 	    this.dimension = dimension;
 	    this.origine = positionOrigine;
-	    this.vitesse=1;
+	    this.vitesse=vitesse;
     }
     public Vaisseau(Dimension dimension, Position positionOrigine) {
 		this(dimension, positionOrigine, 1);
@@ -44,7 +44,7 @@ public class Vaisseau {
    }
 
    public int abscisseLaPlusADroite() {
-	   return this.origine.abscisse() + this.dimension.longueur() - 1;
+	   return this.origine.abscisse() + this.dimension.longueur()- 1;
    }
 
    public int abscisseLaPlusAGauche() {
