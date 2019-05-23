@@ -13,7 +13,7 @@
   <class id="2" language="java" name="fr.unilim.iut.spaceinvaders.SpaceInvaders" project="Spaceinvader" 
     file="/Spaceinvader/src/main/java/fr/unilim/iut/spaceinvaders/SpaceInvaders.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="369" width="267" x="286" y="-8"/>    
+    <position height="-1" width="-1" x="474" y="275"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -23,19 +23,28 @@
   <class id="3" language="java" name="fr.unilim.iut.spaceinvaders.HorsEspaceJeuException" project="Spaceinvader" 
     file="/Spaceinvader/src/main/java/fr/unilim/iut/spaceinvaders/HorsEspaceJeuException.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="185" x="660" y="120"/>    
+    <position height="-1" width="-1" x="748" y="85"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="4">    
+  <class id="4" language="java" name="fr.unilim.iut.spaceinvaders.Constante" project="Spaceinvader" 
+    file="/Spaceinvader/src/main/java/fr/unilim/iut/spaceinvaders/Constante.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="855" y="319"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="5">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="5" name="vaisseau">        
+      <attribute id="6" name="vaisseau">        
         <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
-      <multiplicity id="6" minimum="0" maximum="1">        
+      <multiplicity id="7" minimum="0" maximum="1">        
         <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
