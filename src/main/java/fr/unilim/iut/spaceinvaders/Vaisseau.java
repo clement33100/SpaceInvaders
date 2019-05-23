@@ -7,6 +7,8 @@ public class Vaisseau extends Sprite {
 	    super(dimension, positionOrigine, vitesse);
     }
 
+    
+    
     public Missile tirerUnMissile(Dimension dimensionMissile, int vitesseMissile) {
 		
 		Position positionOrigineMissile = calculerLaPositionDeTirDuMissile(dimensionMissile);
